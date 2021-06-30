@@ -1,0 +1,60 @@
+* {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin-top: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999;
+  height: 25px;
+}
+input:focus {
+  outline: none;
+  border-color: #000;
+}
+input:focus:invalid {
+  border: red solid 1px;
+}
+input:valid {
+  border: green solid 1px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999;
+}
+textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+textarea:focus:invalid {
+  border: red solid 1px;
+}
+textarea:valid {
+  border: green solid 1px;
+}
+
+button {
+  padding: 10px 25px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,54 @@
+* {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-top: 20px;
+  }
+}
+
+@mixin input_textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999;
+
+  &:focus {
+    outline: none;
+    border-color: #000;
+
+    &:invalid {
+      border: red solid 1px;
+    }
+  }
+
+  &:valid {
+    border: green solid 1px;
+  }
+}
+
+input {
+  @include input_textarea;
+  height: 25px;
+}
+
+textarea {
+  @include input_textarea;
+}
+
+button {
+  padding: 10px 25px;
+}

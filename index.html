@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <form action="/my_handling_form_page" method="post">
+        <ul>
+            <li>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" placeholder="Name" maxlength="30" required>
+            </li>
+            <li>
+                <label for="mail"></label>
+                <input type="email" id="mail" name="user_email" placeholder="E-mail" maxlength="50" required>
+            </li>
+            <li>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message" placeholder="Message (maximum 200 characters)" maxlength="200" rows="4" required></textarea>
+            </li>
+            <li>
+                <button type="submit">SEND</button>
+            </li>
+        </ul>
+    </form>
+
+<script src="script.js"></script>
+</body>
+</html>
