@@ -20,6 +20,11 @@ ul li {
   margin-top: 20px;
 }
 
+#required-msg {
+  font-size: 14px;
+  color: #555;
+}
+
 .responsive {
   display: flex;
 }
