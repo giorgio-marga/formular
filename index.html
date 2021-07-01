@@ -10,16 +10,16 @@
     <form action="/my_handling_form_page" method="post">
         <ul>
             <li>
-                <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="Name" maxlength="30" required>
+                <label for="input-name"></label>
+                <input id="input-name" type="text" name="user_name" placeholder="Name" maxlength="30" required>
             </li>
             <li>
-                <label for="mail"></label>
-                <input type="email" id="mail" name="user_email" placeholder="E-mail" maxlength="50" required>
+                <label for="input-email"></label>
+                <input id="input-email" type="email" name="user_email" placeholder="E-mail" maxlength="50" required>
             </li>
             <li>
-                <label for="msg"></label>
-                <textarea id="msg" name="user_message" placeholder="Message (maximum 200 characters)" maxlength="200" rows="4" required></textarea>
+                <label for="textarea-msg"></label>
+                <textarea id="textarea-msg" name="user_message" placeholder="Message (maximum 200 characters)" maxlength="200" rows="4" required></textarea>
             </li>
             <li>
                 <button type="submit">SEND</button>
@@ -27,6 +27,7 @@
         </ul>
     </form>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

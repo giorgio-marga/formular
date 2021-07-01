@@ -28,13 +28,16 @@ input {
 }
 input:focus {
   outline: none;
-  border-color: #000;
-}
-input:focus:invalid {
-  border: red solid 1px;
+  border: 1px solid black;
 }
 input:valid {
-  border: green solid 1px;
+  outline: none;
+  border: 2px solid green;
+}
+
+.input-textarea-invalid {
+  outline: none;
+  border: 2px solid red;
 }
 
 textarea {
@@ -44,13 +47,11 @@ textarea {
 }
 textarea:focus {
   outline: none;
-  border-color: #000;
-}
-textarea:focus:invalid {
-  border: red solid 1px;
+  border: 1px solid black;
 }
 textarea:valid {
-  border: green solid 1px;
+  outline: none;
+  border: 2px solid green;
 }
 
 button {

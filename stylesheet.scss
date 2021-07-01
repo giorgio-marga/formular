@@ -28,21 +28,23 @@ ul {
 
   &:focus {
     outline: none;
-    border-color: #000;
-
-    &:invalid {
-      border: red solid 1px;
-    }
+    border: 1px solid black;
   }
 
   &:valid {
-    border: green solid 1px;
+    outline: none;
+    border: 2px solid green;
   }
 }
 
 input {
   @include input_textarea;
   height: 25px;
+}
+
+.input-textarea-invalid {
+  outline: none;
+  border: 2px solid red;
 }
 
 textarea {
